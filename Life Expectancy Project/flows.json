@@ -1,0 +1,510 @@
+[
+    {
+        "id": "26e2d518.7b65ca",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4f9b75ba.dffc8c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "e9837148.e9d3b",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "a30ede6c.97ee4",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f3ffb7fd.d4c5d8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "a30ede6c.97ee4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "56739296.e64bcc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Machine Learning Model",
+        "tab": "d2fd8145.06ffb",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d2fd8145.06ffb",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home Page",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b468d57.a9b2528",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b1b11140.4e4ef",
+        "type": "inject",
+        "z": "4f9b75ba.dffc8c",
+        "name": "",
+        "topic": "",
+        "payload": "Hello Node-RED!",
+        "payloadType": "string",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 141,
+        "y": 61,
+        "wires": [
+            [
+                "f2f2649a.0d0d98"
+            ]
+        ]
+    },
+    {
+        "id": "f2f2649a.0d0d98",
+        "type": "debug",
+        "z": "4f9b75ba.dffc8c",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 401,
+        "y": 87,
+        "wires": []
+    },
+    {
+        "id": "f7a47e3f.bc073",
+        "type": "ui_form",
+        "z": "4f9b75ba.dffc8c",
+        "name": "",
+        "label": "",
+        "group": "f3ffb7fd.d4c5d8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Developing:0 Developed:1",
+                "value": "a",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Schooling",
+                "value": "b",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Income Comp of Resources",
+                "value": "c",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "HIV/AIDS",
+                "value": "d",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Adult Mortality",
+                "value": "e",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Alcohol",
+                "value": "f",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "a": "",
+            "b": "",
+            "c": "",
+            "d": "",
+            "e": "",
+            "f": ""
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "",
+        "x": 70,
+        "y": 380,
+        "wires": [
+            [
+                "58816b54.caf204"
+            ]
+        ]
+    },
+    {
+        "id": "58816b54.caf204",
+        "type": "function",
+        "z": "4f9b75ba.dffc8c",
+        "name": "pre token",
+        "func": "global.set(\"a\",msg.payload.a);\nglobal.set(\"b\",msg.payload.b);\nglobal.set(\"c\",msg.payload.c);\nglobal.set(\"d\",msg.payload.d);\nglobal.set(\"e\",msg.payload.e);\nglobal.set(\"f\",msg.payload.f);\n\nvar apikey=\"YL0wedesaxUdzd17z7GVM9O3-mbLVfKT8P2LcTRCc2XK\";\nmsg.headers={\"content-type\":\"application/x-www-form-urlencoded\"};\nmsg.payload={\"grant_type\":\"urn:ibm:params:oauth:grant-type:apikey\",\"apikey\":apikey};\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "900cc71e.0f0c08"
+            ]
+        ]
+    },
+    {
+        "id": "900cc71e.0f0c08",
+        "type": "http request",
+        "z": "4f9b75ba.dffc8c",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://iam.cloud.ibm.com/identity/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 290,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9c668fa.96ac48",
+        "type": "ui_form",
+        "z": "26e2d518.7b65ca",
+        "name": "",
+        "label": "",
+        "group": "56739296.e64bcc",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Developing:0 Developed:1",
+                "value": "a",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Schooling",
+                "value": "b",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Income Comp of Resources",
+                "value": "c",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "HIV/AIDS",
+                "value": "d",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Adult Mortality",
+                "value": "e",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Alcohol",
+                "value": "f",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "a": "",
+            "b": "",
+            "c": "",
+            "d": "",
+            "e": "",
+            "f": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 70,
+        "y": 100,
+        "wires": [
+            [
+                "f371f1b0.a0a96"
+            ]
+        ]
+    },
+    {
+        "id": "f371f1b0.a0a96",
+        "type": "function",
+        "z": "26e2d518.7b65ca",
+        "name": "pre token",
+        "func": "//make user given values as global variables\nglobal.set(\"a\",msg.payload.a);\nglobal.set(\"b\",msg.payload.b);\nglobal.set(\"c\",msg.payload.c);\nglobal.set(\"d\",msg.payload.d);\nglobal.set(\"e\",msg.payload.e);\nglobal.set(\"f\",msg.payload.f);\n\n//following are required to receive a token\nvar apikey=\"YL0wedesaxUdzd17z7GVM9O3-mbLVfKT8P2LcTRCc2XK\";\nmsg.headers={\"content-type\":\"application/x-www-form-urlencoded\"};\nmsg.payload={\"grant_type\":\"urn:ibm:params:oauth:grant-type:apikey\",\"apikey\":apikey};\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "3f3ba5f2.887dea"
+            ]
+        ]
+    },
+    {
+        "id": "deaddda8.55d52",
+        "type": "http request",
+        "z": "26e2d518.7b65ca",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://eu-gb.ml.cloud.ibm.com/v3/wml_instances/26aa6ca9-6338-4086-a61c-775a2bf72689/deployments/29630274-2d94-440d-8948-820f640baad7/online",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "145fd760.59bb19",
+                "1ad53acb.6ff5f5"
+            ]
+        ]
+    },
+    {
+        "id": "a13dbd1a.21d1f",
+        "type": "debug",
+        "z": "26e2d518.7b65ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 750,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1ad53acb.6ff5f5",
+        "type": "function",
+        "z": "26e2d518.7b65ca",
+        "name": "getFrom Endpoint",
+        "func": "msg.payload=msg.payload.values[0][0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "a13dbd1a.21d1f",
+                "2cd55781.a5bdd8"
+            ]
+        ]
+    },
+    {
+        "id": "145fd760.59bb19",
+        "type": "debug",
+        "z": "26e2d518.7b65ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 710,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d387cdba.46c7",
+        "type": "function",
+        "z": "26e2d518.7b65ca",
+        "name": "sendTo Endpoint",
+        "func": "//get token and make headers\nvar token=msg.payload.access_token;\nvar instance_id=\"26aa6ca9-6338-4086-a61c-775a2bf72689\"\nmsg.headers={'Content-Type': 'application/json',\"Authorization\":\"Bearer \"+token,\"ML-Instance-ID\":instance_id}\n\n//get variables that are set earlier\nvar a = global.get(\"a\");\nvar b = global.get(\"b\");\nvar c = global.get(\"c\");\nvar d = global.get(\"d\");\nvar e = global.get(\"e\");\nvar f = global.get(\"f\");\n\n//send the user values to service endpoint\nmsg.payload = \n{\"fields\":['Status','Schooling',\n'Income_Comp_Of_Resources','HIV/AIDS',\n'Adult_Mortality','Alcohol'],\n\"values\":[[a,b,c,d,e,f]]};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "deaddda8.55d52"
+            ]
+        ]
+    },
+    {
+        "id": "3f3ba5f2.887dea",
+        "type": "http request",
+        "z": "26e2d518.7b65ca",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://iam.cloud.ibm.com/identity/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "d387cdba.46c7"
+            ]
+        ]
+    },
+    {
+        "id": "2cd55781.a5bdd8",
+        "type": "ui_text",
+        "z": "26e2d518.7b65ca",
+        "group": "56739296.e64bcc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Prediction",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 720,
+        "y": 400,
+        "wires": []
+    }
+]

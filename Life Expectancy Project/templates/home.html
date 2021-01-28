@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Life Expectancy (By Ankit Varma)</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="float" name="Year" placeholder="Year" required="required" />
+        <input type="float" name="Adult_Mortality" placeholder="Adult_Mortality" required="required" />
+        <input type="float" name="Alcohol" placeholder="Alcohol" required="required" />
+        <input type="float" name="percentage_expenditure" placeholder="percentage_expenditure" required="required" />
+        <input type="float" name="Hepatitis_B" placeholder="Hepatitis_B" required="required" />
+        <input type="float" name="Measles" placeholder="Measles" required="required" />
+        <input type="float" name="BMI" placeholder="BMI" required="required" />
+        <input type="float" name="Polio" placeholder="Polio" required="required" />
+		<input type="float" name="Total_expenditure" placeholder="Total_expenditure" required="required" />
+        <input type="float" name="Diphtheria" placeholder="Diphtheria" required="required" />
+        <input type="float" name="HIV/AIDS" placeholder="HIV/AIDS" required="required" />
+        <input type="float" name="GDP" placeholder="GDP" required="required" />
+        <input type="float" name="Population" placeholder="Population" required="required" />
+        <input type="float" name="thinness__1-19_years" placeholder="thinness__1-19_years" required="required" />
+        <input type="float" name="thinness_5-9_years" placeholder="thinness_5-9_years" required="required" />
+        <input type="float" name="Income_composition_of_resources" placeholder="Income_composition_of_resources" required="required" />
+        <input type="float" name="Schooling" placeholder="Schooling" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
